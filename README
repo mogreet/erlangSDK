@@ -1,0 +1,3 @@
+ SDK provides programmatic control of the MoMS API through Erlang.
+Using this SDK, a client can trigger a send to a user over
+SMS, MMS, or email, check the status of a send, manage opt-in status and more.
