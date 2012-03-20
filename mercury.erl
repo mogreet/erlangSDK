@@ -62,30 +62,30 @@
 
 % Examples:
 
-% mercury:start_link([{"client_id","7"},{"token","a487b7fba7180573cccc8958e45d4a59"}]).
+% mercury:start_link([{"client_id","YOUR_CLIENT_ID"},{"token","YOUR_TOKEN"}]).
 % mercury:system_ping().
-% mercury:transaction_send([{"campaign_id","8779"},{"to","6506309251"}, {"from","6506309251"},{"message","coucou"}, {"content_id","4321"}]).
-% mercury:transaction_lookup([{"message_id","72193830"},{"hash","1tkpysnk"}]).
-% mercury:user_getopt([{"number", "6506309251"}]).
-% mercury:user_setopt([{"campaign_id","8779"},{"number","6506309251"},{"status_code","1"}]).
-% mercury:user_uncache([{"number", "6506309251"}]).
-% mercury:user_info([{"number", "6506309251"}]).
-% mercury:user_transactions([{"number", "6506309251"}]).
+% mercury:transaction_send([{"campaign_id","1234"},{"to","1234567890"}, {"from","1234567890"},{"message","hello%20you"}, {"content_id","123"}]).
+% mercury:transaction_lookup([{"message_id","123"},{"hash",fhds78h348fhiwf"}]).
+% mercury:user_getopt([{"number", "1234567890"}]).
+% mercury:user_setopt([{"campaign_id","1234"},{"number","1234567890"},{"status_code","1"}]).
+% mercury:user_uncache([{"number", "1234567890"}]).
+% mercury:user_info([{"number", "1234567890"}]).
+% mercury:user_transactions([{"number", "1234567890"}]).
 
 % mercury:keyword_list([]).
 % mercury:keyword_check([{"keyword","TEST"}]).
-% mercury:keyword_add([{"campaign_id","8779"}, {"keyword","SDKTEST"}]).
-% mercury:keyword_remove([{"campaign_id","8779"}, {"keyword","SDKTEST"}]).
+% mercury:keyword_add([{"campaign_id","1234"}, {"keyword","YOURTEST"}]).
+% mercury:keyword_remove([{"campaign_id","1234"}, {"keyword","YOURTEST"}]).
 
 % mercury:list_list([]).
-% mercury:list_info([{"list_id", "8568"}]).
-% mercury:list_create([{"name", "SDKTEST"}]).
-% mercury:list_append([{"list_id", "8568"}, {"numbers", "6506309248,6506309249"}]).
-% mercury:list_prune([{"list_id","8568"}, {"numbers", "6506309248,6506309249"}]).
-% mercury:list_send([{"list_id","8568"}, {"campaign_id","8779"}, {"subject","hello"}, {"message","hello"}, {"content_id","4321"}]).
-% mercury:list_download([{"list_id","8568"}]).
-% mercury:list_empty([{"list_id","8568"}, {"name","SDKTEST"}]).
-% mercury:list_destroy([{"list_id","8568"}, {"name","SDKTEST"}]).
+% mercury:list_info([{"list_id", "4321"}]).
+% mercury:list_create([{"name", "LISTTEST"}]).
+% mercury:list_append([{"list_id", "4321"}, {"numbers", "1234567890,1234567891"}]).
+% mercury:list_prune([{"list_id","4321"}, {"numbers", "1234567890,1234567891"}]).
+% mercury:list_send([{"list_id","4321"}, {"campaign_id","1234"}, {"subject","hello"}, {"message","hello%20you"}, {"content_id","123"}]).
+% mercury:list_download([{"list_id","4321"}]).
+% mercury:list_empty([{"list_id","4321"}, {"name","LISTTEST"}]).
+% mercury:list_destroy([{"list_id","4321"}, {"name","LISTTEST"}]).
 
 %%%===================================================================
 %%% API
